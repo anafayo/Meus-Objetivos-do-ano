@@ -14,11 +14,10 @@ for(let i=0;i <botoes.length;i++){
     }
 }
         
-cont contadores = codument.querySelectorAll("contador");
+const contadores = codument.querySelectorAll("contador");
 const tempoObjetivo1 = new Date("2025-10-05T00:00>00");
-let tempoAtual = new Date();
 
-contadores[0].textContent = tempoObjetivo1 - tempoAtual;
+contadores[0].textContent = calculaTempo;
 function calculaTempo(tempoObjetivo) {
     let tempoAtual = new Date();
     let tempoFinal1 = tempoObjetivo - tempoAtual;
